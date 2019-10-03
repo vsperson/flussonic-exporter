@@ -26,8 +26,9 @@ class FlussonicCollector(object):
             REMOTE_URL = "http://"  + flussonic_host + REMOTE_URL_PATH
             try:
                 response = requests.get(REMOTE_URL, timeout=(1, 5), auth=(USER, PASSWORD)).json()
-            except requests.RequestException as err:
-                print("Request error: " + err.message)
+            except requests.RequestException:
+                print("Connect to server error: " + flussonic_host)
+                continue
             #print(response.json())
             data = response
             ### Filling stats array ###

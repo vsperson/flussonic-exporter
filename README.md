@@ -1,2 +1,2 @@
-# flussonic_grafana
-Grafana dashboard for statistic flussonic media server
+# Flussonic exporter
+Prometheus exporter for Flussonic media server

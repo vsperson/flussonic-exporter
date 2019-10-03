@@ -1,0 +1,8 @@
+{
+    "flussonic_servers": [
+             "flussonic1.example.net",
+             "flussonic2.example.net"
+    ],
+    "login": "admin",
+    "password": "password"
+}
